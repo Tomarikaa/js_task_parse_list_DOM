@@ -1,0 +1,2 @@
+function t(t){return parseInt(t.replace("$","").replace(",",""))}var r,a=document.querySelector("ul");(r=Array.from(a.children)).sort(function(r,a){var e=t(r.getAttribute("data-salary"));return t(a.getAttribute("data-salary"))-e}),r.forEach(function(t){return a.appendChild(t)}),Array.from(a.children).map(function(r){return{name:r.textContent.trim(),position:r.getAttribute("data-position"),salary:t(r.getAttribute("data-salary")),age:parseInt(r.getAttribute("data-age"))}});
+//# sourceMappingURL=index.91f46046.js.map
